@@ -7,178 +7,201 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
         integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css/style.css">
-    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/base.css">
+    <title>Yogga Aji P - Portfolio</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Side menu -->
-            <div class="row col-2 vh-100 position-fixed">
-                <p class="fw-bold">Portofolio</p>
-                <div class="">
-                    <div class="col">
-                        <a href="#tentang" class="fw-light text-decoration-none">>Tentang</a>
-                    </div>
-                    <br>
-                    <div class="col">
-                        <a href="#pengalaman" class="fw-light text-decoration-none">>Pengalaman</a>
-                    </div>
-                    <br>
-                    <div class="col">
-                        <a href="#proyek" class="fw-light text-decoration-none">>Proyek</a>
-                    </div>
-                    <br>
-                    <div class="col">
-                        <a href="https://www.linkedin.com/in/yogga-aji-pratama-b275141b4/" target="_blank" class="fw-light text-decoration-none">>LinkedIn</a>
-                    </div>
-                    <br>
-                    <div class="col">
-                        <a href="https://drive.google.com/file/d/1lF8qSyvM_8FnoUINvTCByD5UdpizZlAJ/view" target="_blank" class="fw-light text-decoration-none">>CV</a>
-                    </div>
+    <!-- Header dan Navigasi -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">Portfolio</div>
+                <ul class="nav-menu">
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#pengalaman">Pengalaman</a></li>
+                    <li><a href="#proyek">Proyek</a></li>
+                    <li><a href="#skill">Keahlian</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+                <!-- <a href="#" class="buy-now-btn">BUYNOW</a> -->
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="tentang">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="welcome-text">Selamat datang.</p>
+                    <h1 class="hero-name">Halo, Saya Yogga Aji P</h1>
+                    <h2 class="hero-title">Seorang Fullstack Developer/IT Support Technician.</h2>
+                    <p class="hero-description">
+                        Fullstack developer dengan keahlian utama JavaScript (Node.js, Vue.js) dan PHP.
+                        Memiliki kemampuan troubleshooting hardware/software, analisis sistem, pembuatan dokumentasi
+                        teknis (SKPL/SRS),
+                        serta pengelolaan database MySQL dan PostgreSQL.
+                    </p>
+                </div>
+                <video class="hero-video" src="video/pos.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <div class="p-2" id="pengalaman">
+        <div class="container">
+            <h2 class="section-title">Pengalaman</h2>
+            <br>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="img/mja.jpeg" alt="" srcset="" width="80px">
+                </div>
+                <div class="col text-justify">
+                    <p class="fw-bold">Fullstack Web Developer</p>
+                    <p class="fw-light">PT. Marier Jaya Abadi - Freelance</p>
+                    <p>Des 2024 - Feb 2025 · 2 bln</p>
+                    <p>Bandung Barat, Jawa Barat, Indonesia</p>
+                </div>
+
+                <div class="col-sm-2">
+                    <img src="img/pindad.png" alt="" srcset="" width="80px">
+                </div>
+                <div class="col text-justify">
+                    <p class="fw-bold">Software Engineer</p>
+                    <p class="fw-light">PT. Pindad (Persero) - Magang</p>
+                    <p>Sep 2019 - Okt 2019 · 2 bln</p>
+                    <p>Bandung, Jawa Barat, Indonesia</p>
                 </div>
             </div>
-            <!-- Main menu -->
-            <div class="main-menu col overflow-auto">
-                <div class="jumbotron">
-                    <img src="img/bg.jfif" alt="" srcset="" class="text-center" width="100%">
-                </div>
-                <div class="minus-position text-center d-flex justify-content-center">
-                    <!-- <h1 class=" p-5 rounded-circle bg-danger">test</h1> -->
-                    <img src="img/formal.jpg" width="100px" class="rounded-circle" alt="">
-                </div>
-                <div class="text-center">
-                    <h1 class="fw-bold">Yogga Aji Pratama</h1>
-                    <h5 class="fw-light">Fullstack Web Developer</h5>
-                </div>
-                <!-- Resume about -->
-                <div class="m-5" id="tentang">
-                    <h5 class="font-weight-bold">Tentang</h5>
-                    <br>
-                    <p class="text-justify">
-                        Halo semua! 👋🏼
-                    </p>
-                    <p class="text-justify">
-                        Saya Yogga Aji Pratama
-                    </p>
-                    <p class="text-justify">
-                        Lulusan UIN Sunan Gunung Djati Bandung
-                    </p>
-                    <p class="text-justify">
-                        Domisili Bandung
-                    </p>
-                    <p class="text-justify">
-                        I am a skilled full-stack web developer with expertise in JavaScript (Node.js and Vue.js) and PHP using the Laravel framework. In addition to my programming skills, I excel in system analysis, including the creation of SRS documents and database management using DBMS such as MySQL, SQLite, and PostgreSQL.
-                    </p>
-                    <p class="text-justify">
-                        Saya adalah seorang fullstack web developer yang terampil dengan keahlian dalam JavaScript (Node.js dan Vue.js) dan PHP menggunakan framework Laravel. Selain kemampuan pemrograman, saya juga menguasai dalam bidang analisis sistem, termasuk pembuatan dokumen SKPL/SRS dan manajemen basis data menggunakan DBMS seperti MySQL, SQLite, dan PostgreSQL.
-                    </p>
-                </div>
-                <hr>
-                <!-- Experience -->
-                <div class="m-5" id="pengalaman">
-                    <h5 class="font-weight-bold">Pengalaman</h5>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img src="img/pindad.png" alt="" srcset="" width="80px">
-                        </div>
-                        <div class="col text-justify">
-                            <p class="fw-bold">Software Engineer</p>
-                            <p class="fw-light">PT. Pindad (Persero) Magang</p>
-                            <p>Sep 2019 - Okt 2019 · 2 bln</p>
-                            <p>Bandung, Jawa Barat, Indonesia</p>
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img src="" alt="CV. Buana Studio" srcset="" width="80px">
-                        </div>
-                        <div class="col text-justify">
-                            <p class="fw-bold">Software Engineer</p>
-                            <p class="fw-light">CV. Buana Studio Magang</p>
-                            <p>Mei 2019 - Jun 2019 · 2 bln</p>
-                            <p>Bandung, Jawa Barat, Indonesia</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-2">
-                            <img src="img/len.jfif" alt="" srcset="" width="80px">
-                        </div>
-                        <div class="col text-justify">
-                            <p class="fw-bold">IT Support Technician</p>
-                            <p class="fw-light">PT. Len Industri (Persero) Magang</p>
-                            <p>Jan 2015 - Mar 2015 · 3 bln</p>
-                            <p>Bandung, Jawa Barat, Indonesia</p>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-2">
+                    <img src="" alt="CV. Buana Studio" srcset="" width="80px">
                 </div>
-                <hr>
-                <!-- Projects -->
-                <div class="m-5" id="proyek">
-                    <h5 class="font-weight-bold">Proyek</h5>
-                    <br>
-                    <table class="table">
-                        <thead class="text-center">
-                            <th>Tipe</th>
-                            <th>Proyek</th>
-                            <th>Fitur</th>
-                            <th>Deskripsi</th>
-                            <th>Link</th>
-                        </thead>
-                        <tbody>
-                            <td>Unpublish Project</td>
-                            <td>Point of sales</td>
-                            <td>Login, pembayaran, penjualan, pembelian, cetak struk pembelian</td>
-                            <td>Aplikasi desktop yang dibuat dengan teknologi Electron js dengan UI dibuat dengan Vuejs
-                                dan server side dengan Nodejs</td>
-                            <td class="text-center">
-                                <video src="video/pos.mp4" width="320px" controls></video>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>Unpublish Project</td>
-                            <td>Market Price Report</td>
-                            <td>Login, email service, accepted report menu</td>
-                            <td>Aplikasi yang bertujuan menerima laporan kenaikan harga serta laporan tersebut dapat
-                                ditinjau pada halaman administrator pelapor akan mendapat email balasan jika laporan
-                                diterima.</td>
-                            <td><a
-                                    href="https://github.com/yoggaajipratama/TUBES-LARAVEL-PAW">https://github.com/yoggaajipratama/TUBES-LARAVEL-PAW</a>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>Unpublish Project</td>
-                            <td>E-KTP and fingerprint biometric authentication in E-voting with AES 128 encryption</td>
-                            <td>Login, AES encryption, microcontroller and sensor with integration to Web,
-                                administration menu, e-voting</td>
-                            <td>E-Voting dengan fitur autentikasi pemindaian menggunakan E-KTP dan sidik jari yang
-                                dilengkapi enkripsi AES 128</td>
-                            <td>
-                                <a
-                                    href="https://drive.google.com/drive/folders/1ECf5UY7nWzt860JYNhCQdBOl9KDTq7r5?usp=drive_link">https://drive.google.com/drive/folders/1ECf5UY7nWzt860JYNhCQdBOl9KDTq7r5?usp=drive_link</a>
-                            </td>
-                        </tbody>
-                        <tbody>
-                            <td>Unpublish Project</td>
-                            <td>Waterplant (Web pengontrol kelembapan air pada tanaman dan siram otomatis)</td>
-                            <td>Login, microcontroller and sensor with integration to Web, humidity report</td>
-                            <td>Aplikasi Web yang terintegrasi dengan microcontroller dan sensor yang bertujuan untuk
-                                meninjau kelembapan tanah dan melakukan penyiraman tanaman secara otomatis</td>
-                            <td>
-                                <a
-                                    href="https://drive.google.com/drive/folders/1LO6DqhfSdMPFeplVVknwJPifLxmdt0jE?usp=sharing">https://drive.google.com/drive/folders/1LO6DqhfSdMPFeplVVknwJPifLxmdt0jE?usp=sharing</a>
-                            </td>
-                        </tbody>
+                <div class="col text-justify">
+                    <p class="fw-bold">Software Engineer</p>
+                    <p class="fw-light">CV. Buana Studio - Magang</p>
+                    <p>Mei 2019 - Jun 2019 · 2 bln</p>
+                    <p>Bandung, Jawa Barat, Indonesia</p>
+                </div>
 
-                    </table>
+                <div class="col-sm-2">
+                    <img src="img/len.jfif" alt="" srcset="" width="80px">
+                </div>
+                <div class="col text-justify">
+                    <p class="fw-bold">IT Support Technician</p>
+                    <p class="fw-light">PT. Len Industri (Persero) - Magang</p>
+                    <p>Jan 2015 - Mar 2015 · 3 bln</p>
+                    <p>Bandung, Jawa Barat, Indonesia</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Projects -->
+    <div class="p-2 bg-white" id="proyek">
+        <div class="container">
+            <h2 class="section-title">Proyek</h2>
+            <br>
+            <table class="table table-bordered">
+                <thead class="text-center">
+                    <th>Tipe</th>
+                    <th>Proyek</th>
+                    <th>Fitur</th>
+                    <th>Deskripsi</th>
+                </thead>
+                <tbody>
+                    <td>Published</td>
+                    <td>PT. Marier Jaya Abadi Company Profile Website</td>
+                    <td>Galeri, Portfolio, Direct WA, Login, Pendaftaran kontak, Mengelola daftar kontak terdaftar dan
+                        gambar galeri/portfolio.</td>
+                    <td>
+                        Membangun sebuah aplikasi web company profile yang lengkap dengan sistem
+                        admin, pembangunan dilakukan secara keseluruhan mulai dari dokumentasi sistem kebutuhan
+                        perangkat lunak (SKPL) pembangunan aplikasi web hingga penanganan domain dan server. Lebih detail hasil dapat
+                        dilihat di <a href="https://marierjayaabadi.com" target="_blank">marierjayaabadi.com</a> berikut.
+
+                    </td>
+                </tbody>
+                <tbody>
+                    <td>Unpublish</td>
+                    <td>Market Price Report</td>
+                    <td>Login, email service, accepted report menu</td>
+                    <td>Aplikasi yang bertujuan menerima laporan kenaikan harga serta laporan tersebut dapat
+                        ditinjau pada halaman administrator pelapor akan mendapat email balasan jika laporan
+                        diterima. Lebih detail hasil dapat dilihat di <a
+                            href="https://github.com/yoggaajipratama/Kuliah_PAW-TUBES" target="_blank">Github link</a>
+                        berikut.</td>
+                </tbody>
+                <tbody>
+                    <td>Unpublish</td>
+                    <td>E-KTP and fingerprint biometric authentication in E-voting with AES 128 encryption</td>
+                    <td>Login, AES encryption, microcontroller and sensor with integration to Web,
+                        administration menu, e-voting</td>
+                    <td>E-Voting dengan fitur autentikasi pemindaian menggunakan E-KTP dan sidik jari yang
+                        dilengkapi enkripsi AES 128. Lebih detail hasil dapat dilihat di <a
+                            href="https://drive.google.com/drive/folders/1ECf5UY7nWzt860JYNhCQdBOl9KDTq7r5?usp=drive_link"
+                            target="_blank">Google
+                            Drive link</a> berikut.</td>
+                </tbody>
+                <tbody>
+                    <td>Unpublish</td>
+                    <td>Waterplant (Web pengontrol kelembapan air pada tanaman dan siram otomatis)</td>
+                    <td>Login, microcontroller and sensor with integration to Web, humidity report</td>
+                    <td>Aplikasi Web yang terintegrasi dengan microcontroller dan sensor yang bertujuan untuk
+                        meninjau kelembapan tanah dan melakukan penyiraman tanaman secara otomatis. Lebih detail hasil dapat
+                        dilihat pada <a
+                            href="https://drive.google.com/drive/folders/1LO6DqhfSdMPFeplVVknwJPifLxmdt0jE?usp=sharing"
+                            target="_blank">Google
+                            Drive link</a> berikut.</td>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+
+    <!-- Best skill on section -->
+    <section class="best-skill" id="skill">
+        <div class="container">
+            <h2 class="section-title">Keahlian</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="img/nodejs.svg" alt="" class="skills">
+                    <img src="img/vuejs.png" alt="" class="skills">
+                    <img src="img/php.png" alt="" class="skills">
+                    <img src="img/technician.png" alt="" class="skills">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find with me section -->
+    <section class="bg-white find-with-me" id="kontak">
+        <div class="container">
+            <h2 class="section-title">Temukan Saya</h2>
+            <div>
+                <table>
+                    <thead>
+                        <th>Email</th>
+                    </thead>
+                    <tbody>
+                        <td>yoggaajipratama99@gmail.com</td>
+                    </tbody>
+
+                    <thead>
+                        <th>LinkedIn</th>
+                    </thead>
+                    <tbody>
+                        <td><a
+                                href="https://www.linkedin.com/in/yogga-aji-pratama-b275141b4/">https://www.linkedin.com/in/yogga-aji-pratama-b275141b4/</a>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
